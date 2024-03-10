@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgba(255, 192, 203, 0.595);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont{
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont h1{
+    font-family: serif;
+    font-size: 38px;
+    color: rgba(0, 0, 0, 0.773);
+    text-shadow: 20cm;
+    font-weight:bolder;
+    border-bottom: 2.5px solid black;
+   
+}
+.arti{
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px 10px;
+    font-family: serif
+}
+.contin{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+#weightinputPound{
+    display: none;
+}
+#heightinputcm{
+    display: none;
+}
+#heightinputft{
+    display: none;
+}
+#heightinputin{
+    display: none;
+}
+select{
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgba(0, 0, 0, 0.707);
+    font-family: serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+input:focus,
+select:focus{
+    outline: 2px solid black;
+}
+select option{
+    color: white;
+    font-weight: 500;
+    background-color: black;
+}
+button{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.701);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.arti1{
+    padding: 2.5px;
+    cursor: pointer;
+}
+label{
+    font-size: 16px;
+    color: black;
+    font-family: serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+}
+.form{
+    width: 100%;
+   
+}
+.result{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(114, 66, 74, 0.284) ;
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+}
+.result h2{
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family: serif;
+}
+.status{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+.result button{
+    width: 70%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.705);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+::selection{
+    background: rgba(213, 69, 93, 0.712);
+    color:rgba(0, 0, 0, 0.397)  ;
+}

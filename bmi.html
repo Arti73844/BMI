@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    
+  <div class="cont">
+    <h1>BMI Calculator</h1>
+    <div class="form">
+        <label>Age</label>
+        <div class="contin">
+            <input type="number" id="age1" class="arti" placeholder="Enter your age">
+        </div>
+
+        <label class="contin">Gender</label>
+        <div class="arti1">
+          <input type = "radio" name = "gender" id = "male" value = "male" checked>
+          <label for = "male">Male</label>
+        </div>
+        <div class="arti1">
+          <input type="radio" name = "gender" id = "female" value = "female">
+          <label for = "female">Female</label>
+        </div>
+      
+        <label>Weight</label>
+        <div class="contin">
+            <input type="number" id="weightinputKg" class="arti" placeholder="Enter weight in kg">
+            <input type="number" id="weightinputPound" class="arti" placeholder="Enter weight in pound">
+            <select name="weight" id="weight">
+                <option value="Kg">Kg</option>
+                <option value="Pound">Pound</option>
+            </select>
+        </div>
+
+        <label>Height</label>
+        <div class="contin">
+            <input type="number" id="heightinputmt" class="arti" placeholder="Enter height in meter">
+            <input type="number" id="heightinputcm" class="arti" placeholder="Enter height in centimeter">
+            <input type="number" id="heightinputft" class="arti" placeholder="Enter height in feet">
+            <input type="number" id="heightinputin" class="arti" placeholder="Enter height in inches">
+            <select name="height" id="height">
+                <option value="meter">Meter</option>
+                <option value="Centimeter">Centimeter</option>
+                <option value="Feet">Feet</option>
+                <option value="Inches">Inches</option>
+            </select>
+        </div>
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <div class="result">
+        <h2>Your BMI is: .</h2>
+        <p class="status">You need to .</p>
+
+        <div class="measure">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ZOaEs3jxZvyO0P3hqP_SMuVbDnyJ53TVCg&usqp=CAU" alt="">
+        </div>
+        <button onclick="window.location.reload()">Try Again</button>
+    </div>
+  </div>
+  <script src="bmi.js"></script>
+</body>
+</html>
